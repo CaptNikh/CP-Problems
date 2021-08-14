@@ -1,5 +1,5 @@
 # CP-Problems
-Codes from Competitive Programming practice.
+Codes from  my Competitive programming practice.
 
 ## CODECHEF
 
