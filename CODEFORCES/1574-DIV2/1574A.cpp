@@ -1,0 +1,60 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef long double ld;
+
+typedef vector<int> vi;
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+typedef vector<vi> vvi;
+typedef vector<vii> vvii;
+
+#define INF INT_MAX
+#define MOD 1000000007
+#define all(x) x.begin(), x.end()
+#define MAXN 1000000
+#define F first
+#define S second
+#define PB push_back
+#define MP make_pair
+
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int T;
+	cin >> T;
+	while (T--)
+	{
+		int n;
+		cin >> n;
+
+		int x = n;
+
+		while (x != 0)
+		{
+			for (int i = 0; i < x; i++)
+			{
+				cout << "(";
+			}
+			for (int i = 0; i < x; i++)
+			{
+				cout << ")";
+			}
+			int y = x;
+			while (y < n)
+			{
+				cout << "()";
+				y++;
+			}
+			cout << "\n";
+			x--;
+		}
+	}
+
+
+	return 0;
+}
